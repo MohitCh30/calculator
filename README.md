@@ -64,12 +64,22 @@ The calculator is intentionally kept simple to emphasize correctness, clarity, a
 
 These limitations are intentional to keep the implementation focused.
 
-## Running Locally
+## Getting Started
 
-npm install  
+Clone the repository:
+
+git clone https://github.com/<your-username>/react-calculator.git
+cd react-calculator
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
 npm run dev
 
-The application runs at http://localhost:5173
+The application will be available at http://localhost:5173
 
 ## Project Status
 
