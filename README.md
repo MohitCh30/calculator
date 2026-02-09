@@ -68,7 +68,7 @@ These limitations are intentional to keep the implementation focused.
 
 Clone the repository:
 
-git clone https://github.com/MohitCh30/react-calculator.git
+git clone https://github.com/MohitCh30/calculator
 
 cd react-calculator
 
