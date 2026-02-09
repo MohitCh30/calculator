@@ -1,16 +1,81 @@
-# React + Vite
+# React Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple calculator application built using React and Vite, focused on demonstrating correct usage of React fundamentals such as state management, controlled components, and event-driven UI updates.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project implements a basic calculator UI using React. The primary objective is not feature complexity, but clarity in component structure, predictable state updates, and clean separation between logic and presentation.
 
-## React Compiler
+## Objectives
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Demonstrate practical usage of the useState hook
+- Implement controlled components for predictable UI behavior
+- Maintain a single source of truth for application state
+- Handle user interactions using proper DOM events
+- Follow clean and maintainable project structure
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript (ES6+)
+- Vite
+- CSS Modules
+
+## State Management
+
+The application uses React’s useState hook to manage the calculator’s internal state.
+
+- Calculator value is stored in state
+- Button interactions update state via handlers
+- Display renders purely from state
+- No direct DOM manipulation is used
+
+## Architecture
+
+The application is structured using small, focused components.
+
+- App  
+  Owns the calculator state and business logic
+
+- Display  
+  Renders the current calculator value via props
+
+- ButtonsContainer  
+  Renders calculator buttons dynamically and forwards user actions
+
+State is lifted to the App component to ensure predictable data flow.
+
+## Features
+
+- Controlled display component
+- Event-driven input handling
+- Dynamic button rendering
+- Scoped component-level styling
+
+## Design Decisions
+
+The calculator is intentionally kept simple to emphasize correctness, clarity, and maintainability over feature richness.
+
+## Limitations
+
+- No keyboard input
+- No scientific operations
+- No calculation history
+
+These limitations are intentional to keep the implementation focused.
+
+## Running Locally
+
+npm install  
+npm run dev
+
+The application runs at http://localhost:5173
+
+## Project Status
+
+Core functionality complete.  
+Structure is stable and extensible.
+
+## Conclusion
+
+This project demonstrates clean React fundamentals, effective use of useState, and disciplined component design suitable for hackathon or learning purposes.
