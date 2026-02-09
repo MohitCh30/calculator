@@ -68,7 +68,8 @@ These limitations are intentional to keep the implementation focused.
 
 Clone the repository:
 
-git clone https://github.com/<your-username>/react-calculator.git
+git clone https://github.com/MohitCh30/react-calculator.git
+
 cd react-calculator
 
 Install dependencies:
